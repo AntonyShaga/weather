@@ -61,17 +61,11 @@ form.onsubmit = async function (e) {
 		const info = conditions.find(
 			(obj) => obj.code === data.current.condition.code
 		);
-		console.log(info);
-		console.log(info.icon);
-		console.log(info.day);
-		console.log(data.current.condition.text);
-		console.log(info.languages[32]['day_text']);
 
     const filePath = './img/' + (data.current.is_day ? 'day' : 'night') + '/';
 		const fileName = info.icon + '.png';
     const imgPath = filePath + fileName;
-    console.log('filePath', filePath + fileName);
-
+ 
 		const weatherData = {
 			name: data.location.name,
 			country: data.location.country,
