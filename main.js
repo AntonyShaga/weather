@@ -64,7 +64,7 @@ form.onsubmit = async function (e) {
     const filePath = './img/' + (data.current.is_day ? 'day' : 'night') + '/';
 		const fileName = info.icon + '.png';
     const imgPath = filePath + fileName;
- 
+
 		const weatherData = {
 			name: data.location.name,
 			country: data.location.country,
